@@ -1,6 +1,7 @@
 package com.qualitrix.tests;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -36,6 +37,8 @@ public class GetQuoteTest {
          driver= new ChromeDriver();
 
         driver.get("https://qualitrix.com/get-a-quote/");
+
+        driver.findElement(By.cssSelector("#fullname")).sendKeys("veena");
 
         System.out.println("Current Title "+driver.getTitle());
 
