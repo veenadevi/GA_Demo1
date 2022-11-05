@@ -1,0 +1,4 @@
+# Created at 2022-11-06T00:02:18.889
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Veena\Demos\GA_Demo1\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

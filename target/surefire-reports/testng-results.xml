@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-06T00:10:08 GMT+05:30" name="Suite" finished-at="2022-11-06T00:10:16 GMT+05:30" duration-ms="8411">
+    <groups>
+    </groups>
+    <test started-at="2022-11-06T00:10:08 GMT+05:30" name="sanity" finished-at="2022-11-06T00:10:16 GMT+05:30" duration-ms="8411">
+      <class name="com.qualitrix.tests.GetQuoteTest">
+        <test-method signature="checkQuoteTitle()[pri:0, instance:com.qualitrix.tests.GetQuoteTest@5db45159]" started-at="2022-11-06T00:10:08 GMT+05:30" name="checkQuoteTitle" finished-at="2022-11-06T00:10:12 GMT+05:30" duration-ms="4607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQuoteTitle -->
+        <test-method signature="getQuote()[pri:0, instance:com.qualitrix.tests.GetQuoteTest@5db45159]" started-at="2022-11-06T00:10:12 GMT+05:30" name="getQuote" finished-at="2022-11-06T00:10:16 GMT+05:30" duration-ms="3732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getQuote -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qualitrix.tests.GetQuoteTest@5db45159]" started-at="2022-11-06T00:10:16 GMT+05:30" name="tearDown" finished-at="2022-11-06T00:10:16 GMT+05:30" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qualitrix.tests.GetQuoteTest -->
+    </test> <!-- sanity -->
+  </suite> <!-- Suite -->
+</testng-results>
