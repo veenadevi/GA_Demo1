@@ -10,6 +10,10 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import javax.xml.datatype.Duration;
+import java.sql.Time;
+import java.util.concurrent.TimeUnit;
+
 public class GetQuoteTest {
 
     WebDriver driver;
@@ -18,8 +22,13 @@ public class GetQuoteTest {
 
     public void checkQuoteTitle(){
         WebDriverManager.chromedriver().setup();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
 
-         driver= new ChromeDriver();
+        driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 
         driver.get("https://qualitrix.com/get-a-quote/");
 
