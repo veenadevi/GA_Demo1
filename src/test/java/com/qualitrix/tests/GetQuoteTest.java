@@ -4,19 +4,20 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class GetQuoteTest {
 
-
+    WebDriver driver;
 
     @Test
 
-    public void doSetup(){
+    public void checkQuoteTitle(){
         WebDriverManager.chromedriver().setup();
 
-        WebDriver driver= new ChromeDriver();
+         driver= new ChromeDriver();
 
         driver.get("https://qualitrix.com/get-a-quote/");
 
@@ -25,6 +26,27 @@ public class GetQuoteTest {
         Assert.assertTrue(driver.getCurrentUrl().contains("qualitrix.com"));
 
 
+    }
+
+    @Test
+
+    public void getQuote(){
+        WebDriverManager.chromedriver().setup();
+
+         driver= new ChromeDriver();
+
+        driver.get("https://qualitrix.com/get-a-quote/");
+
+        System.out.println("Current Title "+driver.getTitle());
+
+        Assert.assertTrue(driver.getCurrentUrl().contains("qualitrix.com"));
+
+
+    }
+
+    @AfterTest
+    public void tearDown(){
+        driver.close();
     }
 
 }
