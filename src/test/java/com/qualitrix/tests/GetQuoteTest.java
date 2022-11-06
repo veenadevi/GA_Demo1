@@ -34,7 +34,7 @@ public class GetQuoteTest {
 
         System.out.println("Current Title "+driver.getTitle());
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("qualitrix.com"));
+        Assert.assertTrue(driver.getCurrentUrl().contains("veena"));
 
 
     }
